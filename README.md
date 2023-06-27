@@ -1,5 +1,5 @@
 
-                                                         Challenge ONE | Front End - Portfólio
+                                         Challenge ONE | Front End - Portfólio                
 
 Primeiros Passos:
 
