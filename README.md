@@ -1,7 +1,9 @@
 
-                                         Challenge ONE | Front End - Portfólio                
+                                                
 
-Primeiros Passos:
+# Challenge One Fron End - Portfólio
+
+## Primeiros Passos:
 
 🔹Marque esse projeto com uma ⭐
 
@@ -14,7 +16,7 @@ Primeiros Passos:
 ![portimg](https://github.com/Madalenagreguer/Challenge-portfolio-Alura/assets/111307963/61489c26-eb6b-400e-9a00-04d2dc3a2fa6)
 
 
-Analisando nosso repositório!
+## Analisando nosso repositório!
 
 Este é o repositório base do nosso projeto, nele voce encontrará:
 
