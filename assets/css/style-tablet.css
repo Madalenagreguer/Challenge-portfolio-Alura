@@ -1,0 +1,31 @@
+.info {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+  "text text text photo"
+  "text text text photo"; 
+  gap: 2em;
+
+  margin: 0 auto;
+
+}
+
+.info__container {
+  grid-area: text;
+  
+}
+
+.info__foto {
+  grid-area: photo;
+}
+
+.info img {
+  width: 146px;
+  height: 146px;
+}
+
+.cabecalho__menu-email {
+  font-weight: 700;
+}

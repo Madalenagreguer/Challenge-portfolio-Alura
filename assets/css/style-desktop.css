@@ -1,0 +1,97 @@
+main {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 a {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.cabecalho__menu-navegacao > a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.cabecalho, .info, .sobre, .formacao, .contato {
+  padding: 1em 4em;
+}
+
+.descricao {
+  font-size: 1.1em;
+}
+
+.info {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+  "text text text photo"
+  "text text text photo"; 
+  gap: 2em;
+
+  justify-content: center;
+  align-items: center;
+
+} 
+
+.info__redes-link a:hover {
+  text-decoration: underline;
+}
+
+.info__container {
+  grid-area: text;
+  
+}
+
+.info__foto {
+  grid-area: photo;
+}
+
+.info img {
+  width: 300px;
+  height: 300px;
+}
+
+.sobre__descricao {
+  max-width: 900px;
+}
+
+.cabecalho {
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.cabecalho__menu-navegacao {
+  display: flex;
+  gap: 1em;
+}
+
+.cabecalho__menu-email {
+  font-weight: 700;
+}
+
+.skills__container, .hobbies__container, .formacao__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+
+.projetos__botoes-repositorio:active {
+  border: none;
+  background-color: var(--azul);
+  color: var(--offwhite);
+}
+
+.projetos__botoes-demo:active, .botao__submit:active {
+  background: var(--offwhite);
+  border: 1px solid var(--azul);
+  color: var(--azul);
+}

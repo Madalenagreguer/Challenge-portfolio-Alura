@@ -1,0 +1,130 @@
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  
+  flex: none;
+  order: 6;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.contato__container {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+width: 50%;
+}
+
+
+.contato__container > img {
+width: 100%;
+padding: 0 1em 1em 1em;
+max-width: 540px;
+}
+
+.contato__texto {
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.188em;
+}
+
+.contato__formulario { 
+  width: 100%;
+  text-align: left; 
+  max-width: 900px;
+}
+
+.contato__formulario-campo {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+input, textarea {
+  position: relative;
+  display: block;
+  width: 90%;
+  border: 1px solid rgba(0,0,0,.37);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 6px 4px 4px 14px;
+  margin-bottom: .5em;
+  height: 40px;
+  outline: none !important;
+  font-size: 16px;
+  color: rgba(0,0,0,0.85);
+  transition: all .2s ease-in-out;
+}
+
+textarea {
+  resize: none;
+  height: 133px;
+  font-family: var(--fonte-padrao);
+
+}
+
+label {
+  position: absolute;
+  top: 20px; 
+  left: 12px;
+  text-align: left;
+  display: inline-block;
+  padding: 0 4px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #E9EEF2;
+  color: rgba(0,0,0,0.5);
+  margin: 0px auto;
+  cursor: text;
+  transition: all .15s ease-in-out;
+}
+input:hover, input:focus, textarea:hover, textarea:focus { 
+  border: 1px solid #000;
+}
+
+input:valid + label, input:focus + label, textarea:valid + label, textarea:focus + label { 
+  top: -6px;
+  color: #000;
+  font-weight: bold;
+}
+
+.botao__submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 1em;
+  gap: 0.625em;
+  font-weight: 600;
+  font-size: 0.875em;
+  line-height: 1em;
+  border: none;
+  color: white;
+
+  width: 151px;
+  height: 40px;
+
+  background: #2A7AE4;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.botao__submit.enabled {
+background: #2A7AE4;
+}
+
+.botao__submit.disabled {
+background-color: gray;
+} 
+
+.mensagem-erro {
+font-weight: 600;
+color: red;
+}

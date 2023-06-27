@@ -1,0 +1,382 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --cinza: #4751591a;
+    --offwhite: #E9EEF2;
+    --bege: #f2dac438;
+    --azul: #2A7AE4;
+    --grafite: #0D0D0D;
+
+    --fonte-padrao: 'Raleway', sans-serif;
+}
+
+* { 
+    color: var(--grafite); 
+    text-decoration: none;
+    
+}
+
+
+h1 a {
+    font-weight: 700;
+    font-size: 1.375em;
+    line-height: 1.5em;
+}
+
+
+body {
+    font-family: var(--fonte-padrao);
+    background: var(--offwhite);
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    font-weight: bold;
+}
+
+.cabecalho__nome, img {
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.cabecalho img {
+    margin-right: 10px;
+}
+
+.cabecalho__menu-email {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--grafite);
+ 
+}
+
+.cabecalho__menu-navegacao {
+    display: none;
+}
+
+.cabecalho__menu-email::before {
+    content: url(../img/mail-enviado.png);
+    vertical-align: middle;
+    padding-right: 0.5em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+    gap: 1em;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    font-weight: bold;
+}
+
+.info img {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+}
+
+.titulo {
+    font-weight: 900;
+    font-size: 1.375em;
+    line-height: 1.5em;
+}
+
+.info__titulo__apresentacao {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.descricao {
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.2em;
+
+}
+
+.info__descricao {
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    max-width: 900px;
+}
+
+.info__redes {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    padding-top: 1em;
+    width: 100%;
+}
+
+.info__redes-link {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.info__redes-link a {
+    color: var(--grafite);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 1em;
+}
+
+.info__redes-link a::after {
+    content: url(../img/seta.svg);
+    margin-left: 5px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    gap: 1em;
+    background: var(--cinza);
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.sobre__titulo {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills__icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 118px;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.icones {
+    width: 50px;
+    height: auto;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.hobbies__icones {
+    display: grid;
+    justify-content: center;
+
+    width: 156px;
+    height: 118px;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.hobbies__texto {
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  
+}
+
+.texto {
+    font-weight: 500;
+    line-height: 1.188em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    background: var(--cinza);
+    flex: none;
+    order: 5;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.formacao__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.formacao__icones {
+    display: flex;
+    justify-content: center;
+    align-items: 0 0 0;
+    background: white;
+    width: 100px;
+    height: 116px;
+}
+
+.formacao__texto {
+    text-align: left;
+    padding: 0.5em;
+}
+
+.formacao__logo {
+    text-align: center;
+}
+
+.logo {
+    width: 80%;
+}
+
+.formacao__subtexto {
+    padding: 0 0 0.5em 0.5em;
+}
+
+.projetos {
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2em;
+    gap: 1em;
+    text-align: center;
+}
+
+.projetos__container p {
+    text-align: left;
+}
+
+.projetos__icones {
+    width: 80%;
+    height: auto;
+}
+
+.projetos__logo {
+    width: 100%;
+    max-width: 768px;
+    padding-bottom: 1em;
+    
+}
+
+.projetos__botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 1em;
+    gap: 1em;
+}
+
+
+button {
+    padding: 0.75em 1em;
+    gap: 0.625em;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 1em;
+
+    width: 100px;
+    height: 40px;
+}
+
+.projetos__botoes-repositorio {
+    width: 108px;
+    background: var(--offwhite);
+    border: 1px solid var(--azul);
+    color: var(--azul);
+
+}
+
+.projetos__botoes-demo {
+    background: var(--azul);
+    color: var(--offwhite);
+    border: none;
+}
+
+
+footer {
+    background: var(--cinza);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 1em;
+    gap: 10px;
+    height: 5px;
+    flex: none;
+    order: 7;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+footer p {
+    font-weight: 600;
+}
